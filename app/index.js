@@ -48,6 +48,11 @@ app.get('/sumlist/:numbers', function (req, res){
   res.render('sumlist', req.params);
 });
 
+app.get('/rolldice/:rolls', function(req, res){
+  req.params.rolls = parseInt(req.params.rolls);
+  console.log(req.params);
+  res.render('dice.ejs', req.params);
+});
 
 var port = process.env.PORT;
 
