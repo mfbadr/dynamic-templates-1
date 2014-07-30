@@ -1,0 +1,17 @@
+tr:nth-child(2n){
+  background-color: grey;
+}
+
+table{
+  padding: 0px;
+}
+
+td{
+  text-align: center;
+  padding: 10px;
+  font-size:15px;
+}
+
+td#sum{
+  border: 3px solid pink;
+}
