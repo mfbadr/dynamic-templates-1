@@ -54,6 +54,11 @@ app.get('/rolldice/:rolls', function(req, res){
   res.render('dice.ejs', req.params);
 });
 
+app.get('/roll20/:rolls', function(req, res){
+  req.params.rolls = parseInt(req.params.rolls);
+  console.log(req.params);
+  res.render('dice20.ejs', req.params);
+});
 var port = process.env.PORT;
 
 app.listen(port, function(){

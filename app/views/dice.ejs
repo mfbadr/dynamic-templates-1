@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/css/dice.css">
   </head>
   <body>
-    <h1>Rolling <%= rolls %> dice </h1>
+  <h1>Rolling <%= rolls %> dice</h1>
     <% var sum = 0 %>
     <% for( var i = 0; i < rolls; i++) { %> 
       <% var thisRoll = Math.floor(Math.random() * 6) + 1 %>
